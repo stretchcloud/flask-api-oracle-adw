@@ -8,8 +8,8 @@ import oci
 
 # Load the default configuration
 config = oci.config.from_file()
-autonomous_data_warehouse_id = "ocid1.autonomousdatabase.oc1.phx.abyhqljrsnwgtdyxfdvbraoyqyc7sgysfirwxvmk6o56vtem7p74vkig2h7a"
-wallet_password = "Citi21direct"
+autonomous_data_warehouse_id = "ocid1.autonomousdatabase._________________"
+wallet_password = "Password"
 
 def generate_wallet(db_client):
     # Create the model and generate the wallet
