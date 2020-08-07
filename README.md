@@ -19,7 +19,7 @@ You will need the following things properly installed on your computer:
 
 ## Installation
 
-* run `git clone https://github.com/caseyr003/python-adw.git`
+* run `git clone https://github.com/stretchcloud/flask-api-oracle-adw`
 
 ## Setup
 
@@ -38,10 +38,10 @@ Updating Python API
 To run the project locally follow the following steps:
 
 * change into the project directory
-* `docker build -t python/oracleadw .`
-* `docker run -p 5000:5000 python/oracleadw`
+* `docker build -t oracleadw:latest .`
+* `docker run -p 5000:5000 oracleadw:latest`
 or for development
-* `docker run -p 5000:5000 -v [LOCAL_PROJECT_PATH]:/app python/oracleadw`
+* `docker run -p 5000:5000 -v [LOCAL_PROJECT_PATH]:/app oracleadw:latest`
 
 ## JSON API
 
@@ -51,5 +51,3 @@ Must configure `app.py` to connect to your Oracle DB and update the SQL query
 * `http://localhost:5000/api/version`
 (returns current database version)
 
-* `http://localhost:5000/api/test`
-(returns data from Oracle DB connection)
